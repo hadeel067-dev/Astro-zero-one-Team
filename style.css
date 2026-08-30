@@ -38,7 +38,7 @@
     padding: 0.5rem 1rem;
 
  }
- .navbar a:hover ,.navbar .home-active,.navbar .about-active{
+ .navbar a:hover ,.navbar .home-active,.navbar .about-active,.navbar .content-active{
     background:#243B37;
     border-radius: 5rem;
     color: #F6FAFF;
