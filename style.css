@@ -17,17 +17,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
     background: var(--bg-color);
     box-shadow: 0 8px 11px rgb(14 55 54/15%);
     padding: 20px 100px;
     transition: 0.5s;
+    border-radius: 30px;
  }
  .navbar{
     display: flex;
     column-gap: 0.5rem;
     list-style: none;
-    flex-direction: row-reverse;
+    
+   
  }
  .navbar a{
     font-size: 1rem;
@@ -53,7 +54,6 @@
     font-size: 30px;
     font-weight: 500;
     
-
 }
 .hero {
     background-image: url("./e0b8332595f9c6183aef6a813014c915.jpg");
@@ -61,12 +61,47 @@
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    height: 300px;
+    height: 320px;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:20px;
     color:#053930;
+    border-bottom: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     
+}
+.mainlogo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    gap: 7px;
+    margin-right: -600px;
+    flex-wrap: wrap;
+
+}
+.mainlogo h1{
+    font-size: 60px;
+}
+.mainlogo p{
+    font-size: 20px;
+    text-wrap: wrap;
+  
+}
+.btn-main{
+    font-size: 17px;
+    font-weight: 400;
+    height: 50px;
+    width: 130px;
+    outline: none;
+    border: 2px  #053930 ;
+    border-radius: 10px;
+    background:#053930;
+    color: #F8FAFE;
 }
