@@ -117,6 +117,101 @@
     flex-direction: column;
     align-items: center;
 }
+*{
+    background-color:#FBF9F7 ;
+}
+h6{
+    
+    display:flex;
+    justify-content:flex-start;
+    color:#407755;
+}
+.type{
+    margin-top: 10px;
+    display:flex;
+    justify-content:space-evenly;
+    color:#243B37;
+   
+}
+
+.type i{
+    margin-right:9px;
+}
+.cloths{
+    background-color: #F7E7E3;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+}
+.cloths p,i{background-color: #F7E7E3;
+
+}
+.gifts{
+    background-color: #F8EEE3;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+}
+.gifts p,i{background-color: #F8EEE3;
+    margin-right:8px
+}
+.bags{
+    background-color:#ECEEE4;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+    
+}
+.bags p ,i{background-color:#ECEEE4;}
+
+.list{
+
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    color:#243B37;
+   
+}
+.list div{
+    width:150px;
+    height:fit-content;
+    box-sizing: border-box;
+    background-color: white;
+    border:0.5px solid lightgray;
+    border-radius:7px;
+}
+.list p{
+    background-color: white;
+    margin-left:10px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.list img{
+    border-radius: 7px;
+    
+}
+button{
+    border-radius:7px;
+    border:none;
+    background-color:#193832;
+    color:white;
+    height:fit-content;
+    padding:9px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    
+}
+.list i{
+    background-color:#193832 ;
+    margin-right:10px;}
 footer{
     background-color: #183732;
     display: flex;
