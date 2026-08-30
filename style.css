@@ -7,5 +7,10 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     text-decoration: none;
-
 }
+ header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0
+ }
