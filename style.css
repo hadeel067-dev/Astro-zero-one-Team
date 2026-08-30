@@ -55,3 +55,18 @@
     
 
 }
+.hero {
+    background-image: url("./ChatGPT Image Aug 27, 2026, 11_20_02 AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color:#053930;
+    
+}
