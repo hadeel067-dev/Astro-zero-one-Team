@@ -422,8 +422,7 @@ header {
 .navbar a:hover,
 .navbar .home-active ,
 .navbar .about-active ,
-.navbar .contact-active ,
-
+.navbar .contact-active 
 
 {
     background: #063B30;
