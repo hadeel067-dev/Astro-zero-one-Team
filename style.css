@@ -27,7 +27,7 @@
     flex-direction: row;
 
 }
-head{
+footer{
     background-color: #183732;
     display: flex;
     flex-direction: row-reverse;
