@@ -1,25 +1,20 @@
-
-*{
-    background-color:#FBF9F7 ;
+h2{
+    margin-top:10px;
     display:flex;
-    flex-wrap:wrap-reverse;
-
-}
-h6{
-    
-    display:flex;
-    justify-content:flex-start;
-    color:#407755;
+    justify-content:flex-end;
+    color:#053930;
+    margin-bottom:5px ;
+    margin-right: 20px;
 }
 
 .list{
 
     margin-top: 10px;
     display:flex;
-    flex-direction: row;
-    justify-content:space-evenly;
     color:#243B37;
-   
+    flex-wrap:wrap;
+    column-gap: 30px;
+    row-gap:20px; 
    
 }
 .list div{
@@ -29,6 +24,8 @@ h6{
     background-color: white;
     border:0.5px solid lightgray;
     border-radius:7px;
+    box-shadow: 0 8px 11px rgb(14 55 54/15%);
+    
 }
 .list p{
     background-color: white;
@@ -40,18 +37,30 @@ h6{
     border-radius: 7px;
     
 }
-button{
-    border-radius:7px;
-    border:none;
-    background-color:#193832;
-    color:white;
-    height:fit-content;
-    padding:9px;
-    width:100%;
+.lv{
+    background-color:#FBF9F7 ;
+    height:100%;
+    width:fit-content;
     display:flex;
-    justify-content:center;
+    flex-direction:column ;
+    justify-content: flex-start;
+    border-radius: 3px;
     
 }
-.list i{
-    background-color:#193832 ;
-    margin-right:10px;}
+.select{
+    background-color:#FBF9F7 ;
+    border-radius: 3px;
+    border:0.5px dashed lightgray;
+    font-size:10px ;
+    padding-left:15px;
+    box-sizing: border-box;
+    color:#053930;
+
+}
+.selector{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+

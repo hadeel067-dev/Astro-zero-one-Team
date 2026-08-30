@@ -157,7 +157,7 @@ h6{
     padding:30px 30px;
     border-radius: 7px;
 }
-.cloths p,i{background-color: #F7E7E3;
+.cloths p,.cloths i{background-color: #F7E7E3;
 
 }
 .gifts{
@@ -168,7 +168,7 @@ h6{
     padding:30px 30px;
     border-radius: 7px;
 }
-.gifts p,i{background-color: #F8EEE3;
+.gifts p,.gifts i{background-color: #F8EEE3;
     margin-right:8px
 }
 .bags{
@@ -180,7 +180,7 @@ h6{
     border-radius: 7px;
     
 }
-.bags p ,i{background-color:#ECEEE4;}
+.bags p ,.bags i{background-color:#ECEEE4;}
 
 .list{
 
@@ -198,6 +198,7 @@ h6{
     background-color: white;
     border:0.5px solid lightgray;
     border-radius:7px;
+    box-shadow: 0 8px 11px rgb(14 55 54/15%);
 }
 .list p{
     background-color: white;
