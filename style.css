@@ -8,6 +8,10 @@
     scroll-padding-top: 2rem;
     text-decoration: none;
 }
+
+body{
+    background-color:#FBF9F7 ;
+}
  header{
     position: fixed;
     width: 100%;
@@ -56,8 +60,23 @@
     
 
 }
+.hero {
+    background-image: url("./ChatGPT Image Aug 27, 2026, 11_20_02 AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color:#053930;
+    
+}
 
-#right{
+/* #right{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +90,7 @@
     background-size: cover;
 
     
-}
+} */
 .mainlogo{
     display: flex;
     flex-direction: column;
@@ -112,9 +131,7 @@
     flex-direction: column;
     align-items: center;
 }
-*{
-    background-color:#FBF9F7 ;
-}
+
 h6{
     
     display:flex;
