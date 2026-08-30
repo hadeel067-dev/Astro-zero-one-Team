@@ -11,6 +11,127 @@
     scroll-padding-top: 2rem;
     text-decoration: none;
 }
+ header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#F7E7E3 ;
+    box-shadow: 0 8px 11px rgb(14 55 54/15%);
+    padding: 20px 100px;
+    transition: 0.5s;
+    border-radius: 30px;
+ }
+ .navbar{
+    display: flex;
+    column-gap: 0.5rem;
+    list-style: none;
+    
+   
+ }
+ .navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+
+ }
+ .navbar a:hover ,.navbar .home-active,.navbar .about-active,.navbar .content-active{
+    background:#243B37;
+    border-radius: 5rem;
+    color: #F6FAFF;
+    transition: background 0.5s;
+    
+ }
+ .profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    
+
+}
+.hero {
+    background-image: url("./e0b8332595f9c6183aef6a813014c915.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color:#053930;
+    
+}
+
+/* #right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color:#053930;
+    border-bottom: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+} */
+.mainlogo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    gap: 7px;
+    margin-right: -600px;
+    flex-wrap: wrap;
+
+}
+.mainlogo h1{
+    font-size: 60px;
+}
+.mainlogo p{
+    font-size: 20px;
+    text-wrap: wrap;
+  
+}
+.btn-main{
+    font-size: 17px;
+    font-weight: 400;
+    height: 50px;
+    width: 130px;
+    outline: none;
+    border: 2px  #053930 ;
+    border-radius: 10px;
+    background:#053930;
+    color: #F8FAFE;
+}
+
+#right{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+
+}
+#all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h6{
     
     display:flex;
@@ -77,7 +198,6 @@ h6{
     background-color: white;
     border:0.5px solid lightgray;
     border-radius:7px;
-     box-shadow: 0 8px 11px rgb(14 55 54/15%);
 }
 .list p{
     background-color: white;
@@ -104,65 +224,9 @@ button{
 .list i{
     background-color:#193832 ;
     margin-right:10px;}
-
-
- header{
-    position: fixed;
-    width: 100%;
-    top:0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    background: var(--bg-color);
-    box-shadow: 0 8px 11px rgb(14 55 54/15%);
-    padding: 20px 100px;
-    transition: 0.5s;
- }
- .navbar{
-    display: flex;
-    column-gap: 0.5rem;
-    list-style: none;
-    flex-direction: row-reverse;
- }
- .navbar a{
-    font-size: 1rem;
-    font-weight: 500;
-    color:var(--text-color);
-    padding: 0.5rem 1rem;
-
- }
- .navbar a:hover ,.navbar .home-active{
-    background:#243B37;
-    border-radius: 5rem;
-    color: #F6FAFF;
-    transition: background 0.5s;
-    
- }
- .profile{
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-    cursor: pointer;
-}
-.logo{
-    font-size: 30px;
-    font-weight: 500;
-    
-
-}
-
-#right{
-    display: flex;
-    flex-direction: row;
-
-}
 footer{
     background-color: #183732;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-
 }
