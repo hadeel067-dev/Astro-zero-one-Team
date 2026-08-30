@@ -22,3 +22,14 @@
     padding: 20px 100px;
     transition: 0.5s;
  }
+#right{
+    display: flex;
+    flex-direction: row;
+
+}
+head{
+    background-color: #183732;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
