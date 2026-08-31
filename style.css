@@ -11,7 +11,8 @@
     text-decoration: none;
 
 }
-body{
+
+body {
     background: #FAFAF6;
 }
 
@@ -69,7 +70,8 @@ header {
 
 
 }
-.search{
+
+.search {
     display: flex;
     background: #ECEEE4;
     border: none;
@@ -77,11 +79,12 @@ header {
 }
 
 
- main{
+main {
     margin-top: 85px;
- }
+}
+
 .hero {
-    background-image: url("./e0b8332595f9c6183aef6a813014c915.jpg");
+    background-image: url("./imgs/e0b8332595f9c6183aef6a813014c915.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +99,7 @@ header {
     color: #053930;
     margin: 6px;
     /* اذا بدي اخليه  شفاف بس بشيل الخلفية */
-    
+
 
 }
 
@@ -109,11 +112,9 @@ header {
 }
 
 .navbar a:hover,
-.navbar .home-active ,
-.navbar .about-active ,
-.navbar .contact-active 
-
-{
+.navbar .home-active,
+.navbar .about-active,
+.navbar .contact-active {
     background: #063B30;
     border-radius: 5rem;
     color: #F6FAFF;
@@ -150,15 +151,17 @@ header {
     border-radius: 10px;
     background: #053930;
     color: #F8FAFE;
-    
+
 }
-.fa-arrow-left{
+
+.fa-arrow-left {
     margin-top: 6px;
 }
 
-.profile{
+.profile {
     font-size: 25px;
 }
+
 /* malak */
 #right {
     display: flex;
@@ -290,316 +293,42 @@ h3 {
 
 
 
-.mainlogo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-    margin-right: -600px;
-    flex-wrap: wrap;
-
-}
-
-.mainlogo h1 {
-    font-size: 60px;
-}
-
-.mainlogo p {
-    font-size: 20px;
-    text-wrap: wrap;
-
-}
-
-.btn-main {
-    font-size: 17px;
-    font-weight: 400;
-    height: 50px;
-    width: 130px;
-    outline: none;
-    border: 2px #053930;
-    border-radius: 10px;
-    background: #053930;
-    color: #F8FAFE;
-}
-
-
-
-#right {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-
-}
-
-#all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* malak */
-h3 {
-
-    display: flex;
-    justify-content: flex-start;
-    color: #407755;
-
-}
-
-.type {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    color: #243B37;
-
-}
-
-.type i {
-    margin-right: 9px;
-}
-
-.cloths {
-    background-color: #F7E7E3;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-}
-
-.cloths p,
-.cloths i {
-    background-color: #F7E7E3;
-
-}
-
-.gifts {
-    background-color: #F8EEE3;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-}
-
-.gifts p,
-.gifts i {
-    background-color: #F8EEE3;
-    margin-right: 8px
-}
-
-
-.bags {
-    background-color: #ECEEE4;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-
-}
-
-.bags p,
-.bags i {
-
-    background-color: #ECEEE4;
-    margin-left: 2px;
-}
-
-.bags p {
-    margin-right: -14px;
-}
-
-.list {
-
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: #243B37;
-    margin-bottom:100px;
-
-}
-
-.list div {
-    width: 190px;
-    height: fit-content;
-    box-sizing: border-box;
-    background-color: white;
-    border: 0.5px solid lightgray;
-    border-radius: 7px;
-}
-
-.list p {
-    background-color: white;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 6px;
-}
-
-.list img {
-    border-radius: 7px;
-
-}
-
-button {
-    border-radius: 7px;
-    border: none;
-    background-color: #193832;
-    color: white;
-    height: fit-content;
-    padding: 9px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.list i {
-    background-color: #193832;
-    margin-right: 10px;
-}
-
 /* hadeel */
 
 
-/* footer {
->>>>>>> 2cc9dcaf33777e2e9fd4323b45674daa0dd10325
-    background-color: #183732;
-    display: flex;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    padding: 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-    
-} */
 footer{
     background-color: #183732;
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     position: fixed;
     bottom: 0;
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius:  20px;
-    border-top-right-radius:  20px;
 }
-
-
 #right{
     display: flex;
-    flex-direction: column;
-    color: #ECEEE4;
+    flex-direction: row;
+    font-size: 15px;
 
 }
 #all{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
-*{
-    background-color:#FBF9F7 ;
-}
-
-h6{
-    
-    display:flex;
-    justify-content:flex-start;
-    color:#407755;
-}
-.type{
-    margin-top: 10px;
-    display:flex;
-    justify-content:space-evenly;
-    color:#243B37;
-   
-}
-
-.type i{
-    margin-right:9px;
-}
-.cloths{
-    background-color: #F7E7E3;
-    width:100px;
-    height:90px;
-    box-sizing: border-box;
-    padding:30px 30px;
-    border-radius: 7px;
-}
-.cloths p,i{background-color: #F7E7E3;
-
-}
-.gifts{
-    background-color: #F8EEE3;
-    width:100px;
-    height:90px;
-    box-sizing: border-box;
-    padding:30px 30px;
-    border-radius: 7px;
-}
-.gifts p,i{background-color: #F8EEE3;
-    margin-right:8px
-}
-.bags{
-    background-color:#ECEEE4;
-    width:100px;
-    height:90px;
-    box-sizing: border-box;
-    padding:30px 30px;
-    border-radius: 7px;
-
-    
-}
-
-
-.list{
-
-    margin-top: 10px;
-    display:flex;
+#right{
+    display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    color:#243B37;
-   
-}
-.list div{
-    width:150px;
-    height:fit-content;
-    box-sizing: border-box;
-    background-color: white;
-    border:0.5px solid lightgray;
-    border-radius:7px;
-}
-.list p{
-    background-color: white;
-    margin-left:10px;
-    margin-top: 0px;
-    margin-bottom: 6px;
-}
-.list img{
-    border-radius: 7px;
-    
-}
-button{
-    border-radius:7px;
-    border:none;
-    background-color:#193832;
-    color:white;
-    height:fit-content;
-    padding:9px;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    
-}
-.list i{
-    background-color:#193832 ;
-    margin-right:10px;}
+    font-size: 15px;
 
-
+}
+#all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #left{
     display: flex;
@@ -607,15 +336,21 @@ button{
     color: white;
 
 }
-#footericon{
-    font-size: 30px;
-    font-weight: 500;
-
+.link{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+font-size: 15px;
+}
+#center{
+    display: flex;
+  flex-direction: column;
+    justify-content: space-between;
+    color: white;
 }
 h6{
     margin-top: 10px;
 }
-
 h4{
     margin-bottom: 15px;
     color: white;
@@ -624,26 +359,25 @@ h4{
     display: flex;
     margin: -50px;
 } */
-#links a{
+#links{
     justify-content: space-between;
-    color: #ECEEE4;
-
 }
-
 [ target="_blank"]{
     margin: 5px 10px;
 }
 
 
 /* about-mayar */
-.h1-about{
+.h1-about {
     color: #053930;
 }
-.main-about{
+
+.main-about {
     display: flex;
 
 }
-.main-about img{
+
+.main-about img {
     border-radius: 30px;
     height: 450px;
     width: 450px;
@@ -653,67 +387,78 @@ h4{
 
 
 }
-.main-about p{
-font-size: 20px;
-text-wrap: 20px;
+
+.main-about p {
+    font-size: 20px;
+    text-wrap: 20px;
 }
-.about-font{
+
+.about-font {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height:500px ;
-    width: 600px;}
+    height: 500px;
+    width: 600px;
+}
 
 /* css for contact: */
-.beg{
+.beg {
     color: #52635F;
     margin: 10px;
 }
-.myicon{
+
+.myicon {
     display: flex;
     flex-direction: row;
     color: #053930;
     padding: 5px;
 }
-#icon{
+
+#icon {
     color: #243B37;
     margin-left: 10px;
     size: 50px;
     background-color: white;
 }
-.coninfo{
+
+.coninfo {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     border: 1px solid #52635F;
     width: 50%;
 }
-.sendtous{
+
+.sendtous {
     display: flex;
     flex-direction: column;
-     border-radius: 10px;
+    border-radius: 10px;
     border: 1px solid #52635F;
     width: 50%;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
-.mydiv{
+
+.mydiv {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
-.line1{
+
+.line1 {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     margin: 30px;
