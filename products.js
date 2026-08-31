@@ -35,7 +35,7 @@ const products = [
         description: "شمعة عطرية مميزة"
     },
 
-<<<<<<< HEAD
+
     {
         id: 5,
         name: "ثوب فلسطيني",
@@ -45,7 +45,7 @@ const products = [
         description: "ثوب فلسطيني أبيض وأحمر بجودة عالية"
     }
 ];
-=======
+
 
 {
  id:3,
@@ -90,8 +90,6 @@ const productsContainer =
 
     function displayProducts(productsToDisplay) {
 
->>>>>>> cad58f1b8719cc6a1e5eba551fb7aa9156f2c59b
-
 const productsContainer = document.getElementById("productsContainer");
  function displayProducts(productsToDisplay)
   { productsContainer.innerHTML = ""; 
@@ -102,13 +100,13 @@ const productsContainer = document.getElementById("productsContainer");
       <h3>${product.name}</h3>
        <p>${product.description}</p>
         <strong>$${product.price}</strong>
-<<<<<<< HEAD
+
          <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
           console.log(card);
            productsContainer.appendChild(card);
          }); }
           displayProducts(products);
-=======
+
          <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> ;
          <button class="removefromcard" onclick="removefromcart(${product.id})"> احذف من السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
         console.log(card);
@@ -116,4 +114,4 @@ const productsContainer = document.getElementById("productsContainer");
     })};
 }
 displayProducts(products);
->>>>>>> cad58f1b8719cc6a1e5eba551fb7aa9156f2c59b
+
