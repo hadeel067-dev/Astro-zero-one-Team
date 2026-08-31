@@ -18,3 +18,4 @@ categoryButtons.forEach(button => {
                }
           });
 });
+
