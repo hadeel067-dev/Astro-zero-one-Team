@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="style2.css">
-     <script src="./products.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./products.js" defer></script>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
@@ -22,14 +24,15 @@
 
 
         <ul class="navbar">
-            <li><a href="./home.html" >الرئيسية</a></li>
-            <li><a href="./products.html"class="products-active">المنتجات</a></li>
+            <li><a href="./home.html">الرئيسية</a></li>
+            <li><a href="./products.html" class="products-active">المنتجات</a></li>
             <li><a href="./about.html">من نحن</a></li>
             <li><a href="./contact.html">تواصل معنا</a></li>
         </ul>
         <div class="search">
             <input type="text" id="search-box" placeholder="ابحث عن المنتج..." />
-            <button id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: rgb(6, 60, 49);"></i></button>
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"
+                    style="color: rgb(6, 60, 49);"></i></button>
         </div>
 
         <div class="profile">
@@ -44,29 +47,34 @@
 
     </header>
 
-     
-        <!-- Categories -->
-        <h3>تسوّق حسب الفئة</h3>
 
-        <form class="categories">
-            <div class="cloths category-btn" data-category="المنزل">
-                <i class="fa-solid fa-vest"></i>
-                <p>ملابس</p>
-            </div>
-            <div class="bags category-btn" data-category="هدايا">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <p>إكسسوارات</p>
-            </div>
-            <div class="gifts category-btn" data-category="إكسسوارات"></div>>
-            <i class="fa-solid fa-gift"></i>
-            <p>هدايا</p>
+    <!-- Categories -->
+     <section>
+
+         <h3>تسوّق حسب الفئة</h3>
+
+    <form class="categories">
+        <div class="cloths category-btn" data-category="المنزل">
+            <i class="fa-solid fa-vest"></i>
+            <p>ملابس</p>
+        </div>
+        <div class="bags category-btn" data-category="هدايا">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>إكسسوارات</p>
+        </div>
+        <div class="gifts category-btn" data-category="إكسسوارات"></div>>
+        <i class="fa-solid fa-gift"></i>
+        <p>هدايا</p>
         </div>
 
 
-        </form>
-    
+    </form>
+
+     </section>
+   
 
 
-    
+
 </body>
+
 </html>

@@ -72,14 +72,12 @@ const productsContainer =
 
             <h3>${product.name}</h3>
 
-            <p>⭐ ${product.rating}</p>
-
             <p>${product.description}</p>
 
             <strong>$${product.price}</strong>
 
             <button onclick="addToCart(${product.id})">
-                أضف إلى السلة 🛒
+                أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"></i>
             </button>
         `;
 
