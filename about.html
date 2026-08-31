@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اثر|من نحن</title>
+    <title>اثر</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <script src="./main.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
-    <!-- mayar -->
+    <!-- mayar header  -->
+
     <header>
         <div class="right-bar">
             <a class="logo"><i class="fa-brands fa-pagelines" style="color: rgb(6, 60, 49);"></i>
@@ -21,22 +23,23 @@
 
 
         <ul class="navbar">
-            <li><a href="./home.html">الرئيسية</a></li>
+            <li><a href="./home.html" class="home-active">الرئيسية</a></li>
             <li><a href="./products.html">المنتجات</a></li>
-            <li><a href="./about.html" class="about-active">من نحن</a></li>
+            <li><a href="./about.html">من نحن</a></li>
             <li><a href="./contact.html">تواصل معنا</a></li>
         </ul>
         <div class="search">
             <input type="text" id="search-box" placeholder="ابحث عن المنتج..." />
-            <button id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: rgb(6, 60, 49);"></i></button>
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"
+                    style="color: rgb(6, 60, 49);"></i></button>
         </div>
 
         <div class="profile">
             <i class="fa-solid fa-user" style="color: rgb(6, 60, 49);"></i>
-            <div class="cart">
-                <i class="fa-solid fa-cart-shopping" style="color: rgb(6, 60, 49);"></i>
-            </div>
-
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping " style="color: rgb(6, 60, 49);"></i>
+                <span id="cart-count">0</span>
+            </a>
 
         </div>
 
