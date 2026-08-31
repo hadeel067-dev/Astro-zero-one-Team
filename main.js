@@ -1,3 +1,4 @@
+
 const searchinput =document.querySelector('#search-box');
 searchinput.addEventListener("input",()=>{
     const searchvalue=searchinput.textContent;
@@ -5,7 +6,7 @@ searchinput.addEventListener("input",()=>{
 product.name
 .includes(searchvalue)
      );
-     displayProduct(result);
+     displayProducts(result);
 })
 
 const categoryButtons=document.querySelectorAll('.category-btn');
@@ -16,6 +17,7 @@ const categoryButtons=document.querySelectorAll('.category-btn');
     const result=product.filter(product=> 
         product.category===category
     );
-    displayProduct(result);
+    displayProducts(result);
 });
 });
+
