@@ -345,8 +345,9 @@ h4 {
     display: flex;
     margin: -50px;
 } */
-#links {
+#links a {
     justify-content: space-between;
+    color: #ECEEE4;
 }
 
 [ target="_blank"] {
@@ -446,10 +447,10 @@ h4 {
     justify-content: space-evenly;
 }
 
-form {
+/* form {
     display: flex;
     flex-direction: column;
     margin: 30px;
     padding: 10px;
 
-}
+} */
