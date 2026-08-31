@@ -7,6 +7,7 @@
     <title>اثر</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
@@ -59,17 +60,42 @@
 
 
     <!-- malak  main  -->
-    <h3>تسوّق حسب الفئة</h3>
+
+
+     <section>
+     <!-- Categories -->
+        <div class="categories">
+            <h3>تسوّق حسب الفئة</h3>
+
+            <button class="category-btn" data-category="المنزل">
+                المنزل
+            </button>
+
+            <button class="category-btn" data-category="هدايا">
+                هدايا
+            </button>
+          
+            <button class="category-btn" data-category="إكسسوارات">
+                إكسسوارات
+            </button>
+
+        </div>
+          
+
+
+
+     </section>
+    
     <form class="type">
-        <div class="cloths">
+        <div class="cloths category-btn" data-category="المنزل">
             <i class="fa-solid fa-vest"></i>
             <p>ملابس</p>
         </div>
-        <div class="bags">
+        <div class="bags category-btn" data-category="هدايا">
             <i class="fa-solid fa-bag-shopping"></i>
             <p>إكسسوارات</p>
         </div>
-        <div class="gifts">
+        <div class="gifts category-btn" data-category="إكسسوارات"></div>>
             <i class="fa-solid fa-gift"></i>
             <p>هدايا</p>
         </div>
