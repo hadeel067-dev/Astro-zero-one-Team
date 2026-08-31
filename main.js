@@ -1,4 +1,4 @@
-const searchinput =document.querySelector('search-box');
+const searchinput =document.querySelector('#search-box');
 searchinput.addEventListener("input",()=>{
     const searchvalue=searchinput.textContent;
      const result =product.filter(product =>
@@ -7,3 +7,6 @@ product.name
      );
      displayProduct(result);
 })
+
+const category=document.querySelectorAll('.category-btn');
+category.forEach()
