@@ -182,7 +182,7 @@ h3 {
 
 }
 
-.categories {
+/* .categories {
     
     display: flex;
     justify-content: space-evenly;
@@ -246,6 +246,67 @@ h3 {
     margin-right: -14px;
 }
 
+ */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.category-btn {
+    width: 170px;
+    height: 125px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+
+
+.cloths {
+    background-color: #f5e4e2;
+}
+
+.bags {
+    background-color: #e9eee3;
+}
+
+.gifts {
+    background-color: #f6ecdf;
+}
+
+
+
+.category-btn i {
+    font-size: 28px;
+    color: #173d38;
+    margin-bottom: 8px;
+}
+
+
+
+.category-btn p {
+    margin: 0;
+    font-size: 16px;
+    color: #173d38;
+}
+
+
+
+.category-btn:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
 .list {
 
     margin-top: 10px;
@@ -256,7 +317,7 @@ h3 {
 
 }
 
-.list div {
+/* .list div {
     width: 200px;
     height: fit-content;
     box-sizing: border-box;
@@ -289,7 +350,7 @@ h3 {
     color: #053930;
 
 }
-
+ */
 
 
 /* hadeel */
