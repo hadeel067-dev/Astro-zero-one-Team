@@ -1,39 +1,37 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-let list = document.querySelector(".cart-list");
-let total = document.querySelector(".total");
+const list = document.querySelector(".cart-list");
+const total = document.querySelector(".total");
 
 function displayCart() {
 
     list.innerHTML = "";
+
     let totalPrice = 0;
 
     cart.forEach((product, index) => {
 
-        let li = document.createElement("li");
+        const li = document.createElement("li");
 
         li.innerHTML = `
-            <span>${product.name} - $${product.price}</span>
-            <button class="removefromcard" data-index="${index}">
+            <img src="${product.Image}" width="80">
+
+            <span>${product.name}</span>
+
+            <span>$${product.price}</span>
+
+            <span>الكمية: ${product.quantity}</span>
+
+            <button class="removefromcard">
                 حذف
             </button>
         `;
 
         list.appendChild(li);
 
-        totalPrice += product.price;
-    });
+        totalPrice += product.price * product.quantity;
 
-    total.innerHTML = `$${totalPrice}`;
-
-    // أزرار الحذف
-    let removeButtons = document.querySelectorAll(".removefromcard");
-
-    removeButtons.forEach(button => {
-
-        button.onclick = function () {
-
-            let index = Number(this.getAttribute("data-index"));
+        li.querySelector(".removefromcard").onclick = function () {
 
             cart.splice(index, 1);
 
@@ -41,7 +39,10 @@ function displayCart() {
 
             displayCart();
         };
+
     });
+
+    total.innerText = `$${totalPrice}`;
 }
 
 displayCart();
