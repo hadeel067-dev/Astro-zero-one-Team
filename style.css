@@ -170,18 +170,19 @@ h3 {
     display: flex;
     justify-content: flex-start;
     color: #407755;
+    margin-top: 20px;
 
 }
 
-.type {
-    margin-top: 10px;
+.categories {
+    margin-top: px;
     display: flex;
     justify-content: space-evenly;
     color: #243B37;
 
 }
 
-.type i {
+.categories i {
     margin-right: 9px;
 }
 
