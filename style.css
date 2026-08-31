@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     text-decoration: none;
+
 }
 body{
     background: #FAFAF6;
@@ -278,6 +279,171 @@ h3 {
 .add-to-card {
     border-radius: 7px;
     border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #053930;
+
+}
+
+
+
+.mainlogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-right: -600px;
+    flex-wrap: wrap;
+
+}
+
+.mainlogo h1 {
+    font-size: 60px;
+}
+
+.mainlogo p {
+    font-size: 20px;
+    text-wrap: wrap;
+
+}
+
+.btn-main {
+    font-size: 17px;
+    font-weight: 400;
+    height: 50px;
+    width: 130px;
+    outline: none;
+    border: 2px #053930;
+    border-radius: 10px;
+    background: #053930;
+    color: #F8FAFE;
+}
+
+
+
+#right {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+
+}
+
+#all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* malak */
+h3 {
+
+    display: flex;
+    justify-content: flex-start;
+    color: #407755;
+
+}
+
+.type {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #243B37;
+
+}
+
+.type i {
+    margin-right: 9px;
+}
+
+.cloths {
+    background-color: #F7E7E3;
+    width: 100px;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 7px;
+}
+
+.cloths p,
+.cloths i {
+    background-color: #F7E7E3;
+
+}
+
+.gifts {
+    background-color: #F8EEE3;
+    width: 100px;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 7px;
+}
+
+.gifts p,
+.gifts i {
+    background-color: #F8EEE3;
+    margin-right: 8px
+}
+
+
+.bags {
+    background-color: #ECEEE4;
+    width: 100px;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 7px;
+
+}
+
+.bags p,
+.bags i {
+
+    background-color: #ECEEE4;
+    margin-left: 2px;
+}
+
+.bags p {
+    margin-right: -14px;
+}
+
+.list {
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #243B37;
+    margin-bottom:100px;
+
+}
+
+.list div {
+    width: 190px;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    border-radius: 7px;
+}
+
+.list p {
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.list img {
+    border-radius: 7px;
+
+}
+
+button {
+    border-radius: 7px;
+    border: none;
     background-color: #193832;
     color: white;
     height: fit-content;
@@ -292,8 +458,12 @@ h3 {
     background-color: #193832;
     margin-right: 10px;
 }
+
 /* hadeel */
-footer {
+
+
+/* footer {
+>>>>>>> 2cc9dcaf33777e2e9fd4323b45674daa0dd10325
     background-color: #183732;
     display: flex;
     width: 100%;
@@ -302,9 +472,21 @@ footer {
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;
+    
+} */
+footer{
+    background-color: #183732;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
     border-top-left-radius:  20px;
     border-top-right-radius:  20px;
 }
+
 
 #right{
     display: flex;
@@ -316,8 +498,108 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+*{
+    background-color:#FBF9F7 ;
+}
+
+h6{
+    
+    display:flex;
+    justify-content:flex-start;
+    color:#407755;
+}
+.type{
+    margin-top: 10px;
+    display:flex;
+    justify-content:space-evenly;
+    color:#243B37;
+   
+}
+
+.type i{
+    margin-right:9px;
+}
+.cloths{
+    background-color: #F7E7E3;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+}
+.cloths p,i{background-color: #F7E7E3;
+
+}
+.gifts{
+    background-color: #F8EEE3;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+}
+.gifts p,i{background-color: #F8EEE3;
+    margin-right:8px
+}
+.bags{
+    background-color:#ECEEE4;
+    width:100px;
+    height:90px;
+    box-sizing: border-box;
+    padding:30px 30px;
+    border-radius: 7px;
+
     
 }
+
+
+.list{
+
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    color:#243B37;
+   
+}
+.list div{
+    width:150px;
+    height:fit-content;
+    box-sizing: border-box;
+    background-color: white;
+    border:0.5px solid lightgray;
+    border-radius:7px;
+}
+.list p{
+    background-color: white;
+    margin-left:10px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.list img{
+    border-radius: 7px;
+    
+}
+button{
+    border-radius:7px;
+    border:none;
+    background-color:#193832;
+    color:white;
+    height:fit-content;
+    padding:9px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    
+}
+.list i{
+    background-color:#193832 ;
+    margin-right:10px;}
+
+
 
 #left{
     display: flex;
@@ -353,7 +635,6 @@ h4{
 }
 
 
-
 /* about-mayar */
 .h1-about{
     color: #053930;
@@ -382,5 +663,60 @@ text-wrap: 20px;
     flex-direction: column;
     gap: 10px;
     height:500px ;
-    width: 600px;
+    width: 600px;}
+
+/* css for contact: */
+.beg{
+    color: #52635F;
+    margin: 10px;
+}
+.myicon{
+    display: flex;
+    flex-direction: row;
+    color: #053930;
+    padding: 5px;
+}
+#icon{
+    color: #243B37;
+    margin-left: 10px;
+    size: 50px;
+    background-color: white;
+}
+.coninfo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #52635F;
+    width: 50%;
+}
+.sendtous{
+    display: flex;
+    flex-direction: column;
+     border-radius: 10px;
+    border: 1px solid #52635F;
+    width: 50%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.mydiv{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+
 }
