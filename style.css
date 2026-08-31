@@ -257,12 +257,13 @@ h3 {
 }
 
 .list div {
-    width: 150px;
+    width: 200px;
     height: fit-content;
     box-sizing: border-box;
     background-color: white;
     border: 0.5px solid lightgray;
     border-radius: 7px;
+    box-shadow: 0 8px 11px rgb(14 55 54/15%);
 }
 
 .list p {
