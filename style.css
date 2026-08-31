@@ -163,18 +163,6 @@ main {
 }
 
 /* malak */
-#right {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-
-}
-
-#all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 h3 {
 
@@ -318,17 +306,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-#right{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
 
-}
-#all{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 #left{
     display: flex;
