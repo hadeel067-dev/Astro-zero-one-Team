@@ -284,71 +284,77 @@ h3 {
 /* hadeel */
 
 
-footer{
+footer {
     background-color: #183732;
     display: flex;
     flex-direction: row;
     width: 100%;
-    position:fixed;
+    left: 0;
     bottom: 0;
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
-#right{
+
+#right {
     display: flex;
     flex-direction: row;
     font-size: 15px;
 
 }
-#all{
+
+#all {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-#left{
+#left {
     display: flex;
     margin-left: 0;
     color: white;
 
 }
-.link a{
+
+.link a {
     text-decoration: none;
     color: white;
     margin: 5px;
-font-size: 15px;
+    font-size: 15px;
 }
-#center{
+
+#center {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     color: white;
 }
-h6{
+
+h6 {
     margin-top: 10px;
 }
-h4{
+
+h4 {
     margin-bottom: 15px;
     color: white;
 }
+
 /* #email{
     display: flex;
     margin: -50px;
 } */
-#links{
+#links {
     justify-content: space-between;
 }
-[ target="_blank"]{
+
+[ target="_blank"] {
     margin: 5px 10px;
 }
 
 
-<<<<<<< HEAD
 
-=======
 /* about-mayar */
 .h1-about {
     color: #053930;
@@ -447,4 +453,3 @@ form {
     padding: 10px;
 
 }
->>>>>>> b93456a3ad9e8cf4ca3c9a5e7e0af4b8eabb45d7
