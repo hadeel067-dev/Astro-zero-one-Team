@@ -10,7 +10,9 @@
     scroll-padding-top: 2rem;
     text-decoration: none;
 }
-
+body{
+    background: #FAFAF6;
+}
 
 header {
     position: fixed;
@@ -21,10 +23,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 8px 11px rgb(14 55 54/15%);
+    /* box-shadow: 0 8px 11px rgb(14 55 54/15%); */
     padding: 20px 100px;
     transition: 0.5s;
-    border-radius: 30px;
+    background-color: #FAFAF6;
 }
 
 .navbar {
@@ -66,348 +68,34 @@ header {
 
 
 }
-
-.hero {
-    background-image: url("./e0b8332595f9c6183aef6a813014c915.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 300px;
-    padding-top: 100px;
+.search{
     display: flex;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: #053930;
-
-}
-
-.navbar a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-
-}
-
-.navbar a:hover,
-.navbar .home-active {
-    background: #063B30;
-    border-radius: 5rem;
-    color: #F6FAFF;
-    transition: background 0.5s;
-
-}
-
-.mainlogo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-    margin-right: -600px;
-    flex-wrap: wrap;
-
-}
-
-.mainlogo h1 {
-    font-size: 60px;
-}
-
-.mainlogo p {
-    font-size: 20px;
-    text-wrap: wrap;
-
-}
-
-.btn-main {
-    font-size: 17px;
-    font-weight: 400;
-    height: 50px;
-    width: 130px;
-    outline: none;
-    border: 2px #053930;
-    border-radius: 10px;
-    background: #053930;
-    color: #F8FAFE;
-}
-
-/* malak */
-#right {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-
-}
-
-#all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h3 {
-
-    display: flex;
-    justify-content: flex-start;
-    color: #407755;
-
-}
-
-.type {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    color: #243B37;
-
-}
-
-.type i {
-    margin-right: 9px;
-}
-
-.cloths {
-    background-color: #F7E7E3;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-}
-
-.cloths p,
-.cloths i {
-    background-color: #F7E7E3;
-
-}
-
-.gifts {
-    background-color: #F8EEE3;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-}
-
-.gifts p,
-.gifts i {
-    background-color: #F8EEE3;
-    margin-right: 8px
-}
-
-
-.bags {
-    background-color: #ECEEE4;
-    width: 100px;
-    height: 90px;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    border-radius: 7px;
-
-}
-
-.bags p,
-.bags i {
-
-    background-color: #ECEEE4;
-    margin-left: 2px;
-}
-
-.bags p {
-    margin-right: -14px;
-}
-
-.list {
-
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: #243B37;
-
-}
-
-.list div {
-    width: 150px;
-    height: fit-content;
-    box-sizing: border-box;
-    background-color: white;
-    border: 0.5px solid lightgray;
-    border-radius: 7px;
-}
-
-.list p {
-    background-color: white;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 6px;
-}
-
-.list img {
-    border-radius: 7px;
-
-}
-
-button {
-    border-radius: 7px;
+    background: #ECEEE4;
     border: none;
-    background-color: #193832;
-    color: white;
-    height: fit-content;
-    padding: 9px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.list i {
-    background-color: #193832;
-    margin-right: 10px;
-}
-
-footer {
-    background-color: #183732;
-    display: flex;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    padding: 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#right{
-    display: flex;
-    flex-direction: column;
-    color: #ECEEE4;
-
-}
-#all{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-#left{
-    display: flex;
-    margin-left: 0;
-    color: white;
-
-}
-#footericon{
-    font-size: 30px;
-    font-weight: 500;
-
-}
-h6{
-    margin-top: 10px;
-}
-
-h4{
-    margin-bottom: 15px;
-    color: white;
-}
-/* #email{
-    display: flex;
-    margin: -50px;
-} */
-#links a{
-    justify-content: space-between;
-    color: #ECEEE4;
-
-}
-
-[ target="_blank"]{
-    margin: 5px 10px;
-}/* mayar */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;60e;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-    text-decoration: none;
+    border-radius: 20px;
 }
 
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 8px 11px rgb(14 55 54/15%);
-    padding: 20px 100px;
-    transition: 0.5s;
-    border-radius: 30px;
-}
-
-.navbar {
-    display: flex;
-    column-gap: 0.5rem;
-    list-style: none;
-
-
-}
-
-.navbar a {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-
-}
-
-.navbar a:hover,
-.navbar .home-active,
-.navbar .about-active,
-.navbar .content-active {
-    background: #243B37;
-    border-radius: 5rem;
-    color: #F6FAFF;
-    transition: background 0.5s;
-
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-    cursor: pointer;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: 500;
-
-
-}
-
+ main{
+    margin-top: 85px;
+ }
 .hero {
     background-image: url("./e0b8332595f9c6183aef6a813014c915.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    height: 300px;
+    height: 350px;
     padding-top: 100px;
     display: flex;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 20px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     color: #053930;
+    margin: 6px;
+    /* اذا بدي اخليه  شفاف بس بشيل الخلفية */
+    
 
 }
 
@@ -453,17 +141,23 @@ header {
 }
 
 .btn-main {
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     height: 50px;
-    width: 130px;
-    outline: none;
+    width: 160px;
     border: 2px #053930;
     border-radius: 10px;
     background: #053930;
     color: #F8FAFE;
+    
+}
+.fa-arrow-left{
+    margin-top: 6px;
 }
 
+.profile{
+    font-size: 25px;
+}
 /* malak */
 #right {
     display: flex;
@@ -581,7 +275,7 @@ h3 {
 
 }
 
-button {
+.add-to-card {
     border-radius: 7px;
     border: none;
     background-color: #193832;
@@ -598,7 +292,7 @@ button {
     background-color: #193832;
     margin-right: 10px;
 }
-
+/* hadeel */
 footer {
     background-color: #183732;
     display: flex;
@@ -608,6 +302,8 @@ footer {
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;
+    border-top-left-radius:  20px;
+    border-top-right-radius:  20px;
 }
 
 #right{
@@ -654,4 +350,37 @@ h4{
 
 [ target="_blank"]{
     margin: 5px 10px;
+}
+
+
+
+/* about-mayar */
+.h1-about{
+    color: #053930;
+}
+.main-about{
+    display: flex;
+
+}
+.main-about img{
+    border-radius: 30px;
+    height: 450px;
+    width: 450px;
+    margin-left: -400px;
+    padding-left: -400px;
+    margin-bottom: 10px;
+
+
+}
+.main-about p{
+font-size: 20px;
+text-wrap: 20px;
+}
+.about-font{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height:500px ;
+    width: 600px;
 }
