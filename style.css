@@ -9,9 +9,7 @@
     text-decoration: none;
 }
 
-body{
-    background-color:#FBF9F7 ;
-}
+
  header{
     position: fixed;
     width: 100%;
@@ -21,7 +19,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--bg-color);
+    background:#F7E7E3 ;
     box-shadow: 0 8px 11px rgb(14 55 54/15%);
     padding: 20px 100px;
     transition: 0.5s;
@@ -37,7 +35,6 @@ body{
  .navbar a{
     font-size: 1rem;
     font-weight: 500;
-    color:var(--text-color);
     padding: 0.5rem 1rem;
 
  }
@@ -102,8 +99,6 @@ body{
     flex-wrap: wrap;
 
 }
-<<<<<<< HEAD
-=======
 .mainlogo h1{
     font-size: 60px;
 }
@@ -124,7 +119,7 @@ body{
     color: #F8FAFE;
 }
 
->>>>>>> 5cc8d3e541acab1b1f67f36a60ae0fe52e6a924f
+
 #right{
     display: flex;
     flex-direction: row;
@@ -136,15 +131,11 @@ body{
     flex-direction: column;
     align-items: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 *{
     background-color:#FBF9F7 ;
 }
-=======
 
->>>>>>> bfc41dcb83989983aade2aae5c70179ae861a94e
 h6{
     
     display:flex;
@@ -237,7 +228,7 @@ button{
 .list i{
     background-color:#193832 ;
     margin-right:10px;}
->>>>>>> 5cc8d3e541acab1b1f67f36a60ae0fe52e6a924f
+
 footer{
     background-color: #183732;
     display: flex;
@@ -284,11 +275,4 @@ h4{
 [ target="_blank"]{
     margin: 5px 10px;
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5cc8d3e541acab1b1f67f36a60ae0fe52e6a924f
-=======
->>>>>>> dcfbd21b4607c112ae1c8aace1731903764863bc
