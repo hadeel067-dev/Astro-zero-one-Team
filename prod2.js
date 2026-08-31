@@ -1,6 +1,4 @@
-const productsContainer =
-    document.getElementById("productsContainer");
-
+const productsContainer = document.getElementById("productsContainer");
 
 function displayProducts(productsToDisplay) {
 
@@ -23,31 +21,71 @@ function displayProducts(productsToDisplay) {
 
             <button class="add-to-card">
                 أضف إلى السلة
-                <i class="fa-solid fa-cart-shopping"
-                   style="color: rgb(255, 255, 255);">
-                </i>
+                <i class="fa-solid fa-cart-shopping"></i>
             </button>
         `;
 
-        console.log(card);
-
         productsContainer.appendChild(card);
 
-        
         const addButton = card.querySelector(".add-to-card");
 
         addButton.onclick = function () {
 
+            // نجيب السلة القديمة
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            cart.push(product);
+            // نضيف المنتج
+            // cart.push(product);
 
+            addButton.onclick = function () {
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                let existingProduct = cart.find(item => item.id === product.id);
+
+                if (existingProduct) {
+
+                    existingProduct.quantity += 1;
+
+                } else {
+
+                    cart.push({
+                        ...product,
+                        quantity: 1
+                    });
+
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                updateCartCount();
+            };
+
+            // نخزن السلة
             localStorage.setItem("cart", JSON.stringify(cart));
 
-            alert("تمت إضافة المنتج إلى السلة ");
+            // تحديث الرقم
+            updateCartCount();
         };
     });
 }
 
 
+// تحديث عدد المنتجات فوق السلة
+function updateCartCount() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const cartCount = document.getElementById("cart-count");
+
+    if (cartCount) {
+        cartCount.innerText = cart.length;
+    }
+}
+
+
+// تشغيل عرض المنتجات
 displayProducts(products);
+
+// تحديث الرقم عند فتح الصفحة
+updateCartCount();
