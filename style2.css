@@ -66,11 +66,7 @@
 
  */
 
-
-header{border-radius:7px;
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
- .product-card {
+.product-card {
     width: 260px;
     background: white;
     border-radius: 15px;
@@ -96,7 +92,6 @@ header{border-radius:7px;
     font-size: 18px;
     margin: 15px 0 8px;
     color: rgb(6, 60, 49);
-    
 }
 
 .product-card p {
@@ -139,4 +134,159 @@ header{border-radius:7px;
 }
 
 
+
+/* .cart{
+    background-color: #ECEEE4;
+    display:flex;
+    flex-direction: column;
+    border-radius: 9px;
+    height:fit-content;
+    width:fit-content;
+    padding:17px;
+
+} */
+
+/* صندوق السلة */
+.cart {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* العنوان */
+.cart h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* قائمة المنتجات */
+.cart-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* المنتج */
+.cart-list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #faf9f7;
+    border: 1px solid #e6e1d9;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.cart-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* صورة المنتج */
+.cart-list img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* اسم المنتج */
+.cart-list span {
+    font-size: 17px;
+    color: #333;
+    flex: 1;
+}
+
+/* السعر */
+.cart-list span:nth-of-type(2) {
+    font-weight: bold;
+    color: #806b52;
+}
+
+/* الكمية */
+.cart-list span:nth-of-type(3) {
+    background: #eee8df;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* زر الحذف */
+.removefromcard {
+    border: none;
+    background: #b84c4c;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.removefromcard:hover {
+    background: #963b3b;
+}
+
+/* عنوان المجموع */
+.total-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    display: inline-block;
+}
+
+/* السعر النهائي */
+.total {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #806b52;
+    margin-right: 10px;
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 650px) {
+
+    .cart {
+        width: 95%;
+        padding: 20px;
+        margin: 40px ;
+    }
+
+    .cart h1 {
+        font-size: 26px;
+    }
+
+    .cart-list li {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .cart-list img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cart-list span {
+        font-size: 15px;
+    }
+
+    .removefromcard {
+        width: 100%;
+    }
+
+    .total-title,
+    .total {
+        font-size: 20px;
+    }
+}
 
