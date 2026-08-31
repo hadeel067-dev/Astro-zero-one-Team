@@ -72,6 +72,7 @@ const products = [
 ] 
 
 
+
 const productsContainer =
     document.getElementById("productsContainer");
 
@@ -90,7 +91,8 @@ function displayProducts(productsToDisplay) {
       <h3>${product.name}</h3>
        <p>${product.description}</p>
         <strong>$${product.price}</strong>
-         <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
+         <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> ;
+         <button class="removefromcard" onclick="removefromcart(${product.id})"> احذف من السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
         console.log(card);
         productsContainer.appendChild(card);
     })};
