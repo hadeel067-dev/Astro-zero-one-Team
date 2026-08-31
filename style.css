@@ -114,7 +114,8 @@ main {
 .navbar a:hover,
 .navbar .home-active,
 .navbar .about-active,
-.navbar .contact-active {
+.navbar .contact-active,
+.navbar .products-active {
     background: #063B30;
     border-radius: 5rem;
     color: #F6FAFF;
