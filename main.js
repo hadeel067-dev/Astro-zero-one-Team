@@ -8,5 +8,14 @@ product.name
      displayProduct(result);
 })
 
-const category=document.querySelectorAll('.category-btn');
-category.forEach()
+const categoryButtons=document.querySelectorAll('.category-btn');
+categoryButtons.forEach(div =>{
+categoryButtons.addEventListener("click",()=>{
+     
+    const category=div.dataset.category;
+    const result=product.filter(product=> 
+        product.category===category
+    );
+    displayProduct(result);
+});
+});
