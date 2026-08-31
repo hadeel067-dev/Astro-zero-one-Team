@@ -428,57 +428,5 @@ h4{
     margin: 5px 10px;
 }
 
-/* css for contact: */
-.beg{
-    color: #52635F;
-    margin: 10px;
-}
-.myicon{
-    display: flex;
-    flex-direction: row;
-    color: #053930;
-    padding: 5px;
-}
-#icon{
-    color: #243B37;
-    margin-left: 10px;
-    size: 50px;
-    background-color: white;
-}
-.coninfo{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    border: 1px solid #52635F;
-    width: 50%;
-}
-.sendtous{
-    display: flex;
-    flex-direction: column;
-     border-radius: 10px;
-    border: 1px solid #52635F;
-    width: 50%;
-}
-.contact{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.mydiv{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-.line1{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 10px;
-}
+
+

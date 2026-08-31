@@ -1,0 +1,74 @@
+.beg{
+    color: #52635F;
+    margin: 10px;
+}
+.myicon{
+    display: flex;
+    flex-direction: row;
+    color: #053930;
+    padding: 5px;
+}
+#icon{
+    color: #243B37;
+    margin-left: 10px;
+    size: 50px;
+    background-color: white;
+}
+.coninfo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #52635F;
+    width: 30%;
+    color: #407755;
+}
+.sendtous{
+    display: flex;
+    flex-direction: column;
+     border-radius: 10px;
+    border: 2px solid #52635F;
+    width: 30%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  
+}
+.mydiv{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.coninfo p{
+font-size: smaller;
+color: #52635F;
+}
+.mod{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.mod i{
+    background-color: #F0EFEB;
+    border-radius: 15px;
+    color: #407755;
+}
