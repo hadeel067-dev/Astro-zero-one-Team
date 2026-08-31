@@ -22,7 +22,7 @@ const products = [
         name: "حقيبة قماش مطرزة",
         price: 18,
         category: "هدايا",
-        Image: "./imgs/Handmade Nature Inspired Mug.jfif",
+        Image: "./imgs/حقيبة.jfif",
         description: "حقيبة قماش مطرزة مخيطة بخيوط ذات جودة عالية"
     },
 
@@ -46,17 +46,19 @@ const products = [
 ];
 
 const productsContainer = document.getElementById("productsContainer");
- function displayProducts(productsToDisplay)
-  { productsContainer.innerHTML = ""; 
-    productsToDisplay.forEach(product => { const card = document.createElement("div"); 
-    card.classList.add("product-card");
-     card.innerHTML = ` 
+function displayProducts(productsToDisplay) {
+    productsContainer.innerHTML = "";
+    productsToDisplay.forEach(product => {
+        const card = document.createElement("div");
+        card.classList.add("product-card");
+        card.innerHTML = ` 
      <img src="${product.Image}" alt="${product.name}">
       <h3>${product.name}</h3>
        <p>${product.description}</p>
         <strong>$${product.price}</strong>
          <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
-          console.log(card);
-           productsContainer.appendChild(card);
-         }); }
-          displayProducts(products);
+        console.log(card);
+        productsContainer.appendChild(card);
+    });
+}
+displayProducts(products);
