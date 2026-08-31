@@ -7,7 +7,7 @@ h2{
     margin-right: 20px;
 }
 
-.list{
+.product-card{
 
     margin-top: 10px;
     display:flex;
@@ -17,7 +17,7 @@ h2{
     row-gap:20px; 
    
 }
-.list div{
+.product-card div{
     width:150px;
     height:fit-content;
     box-sizing: border-box;
@@ -27,13 +27,13 @@ h2{
     box-shadow: 0 8px 11px rgb(14 55 54/15%);
     
 }
-.list p{
+.product-card p{
     background-color: white;
     margin-left:10px;
     margin-top: 0px;
     margin-bottom: 6px;
 }
-.list img{
+.product-card img{
     border-radius: 7px;
     
 }
@@ -62,5 +62,11 @@ h2{
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 20px;
+}
+.cart{
+    background-color: #FBF9F7;
+
+
+
 }
 

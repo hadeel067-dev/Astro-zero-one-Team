@@ -4,15 +4,20 @@ let calculation=document.querySelector("#cal-btn");
 let total=document.querySelector(".total");
 let price=0;
 let title=null;
-prouducts.forEach((el) => {
-    el.preventDefault();
-    el.onclick =()=>{ 
+products.forEach((el) => {
+    
+    el.onclick =(event)=>{ 
+        event.preventDefault()
          title=el.getAttribute('title')
-         price=el.Number(getAttribute('price'))
+         price+=Number(el.getAttribute('price'))
         const product=document.createElement('li')
         product.innerText=title
         list.appendChild(product)
+        
+        total.innerHTML=price
 
 
     }
+    
 });
+
