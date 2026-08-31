@@ -86,42 +86,5 @@ const products = [
 
 // }
 //malak
-let productss=document.querySelectorAll(".add-to-card");
-let productrmv=document.querySelectorAll(".removefromcard");
-let list=document.querySelector(".cart-list");
-let total=document.querySelector(".total");
-let price=0;
-let title=null;
-let productsss=[]
-function addToCard(){
-    products.forEach((el,index) => {
-    
-    el.onclick =(event)=>{ 
-        event.preventDefault()
-         title=el.getAttribute('title')
-         price+=Number(el.getAttribute('price'))
-         productsss[index]=document.createElement('li')
-        productsss[index].innerText=title
-        list.appendChild(productsss[index])
-        
-        total.innerHTML=`$${price}`
 
-
-    }
-    
-})};function removefromcard(){ productrmv.forEach((el,index) => {
-    
-    el.onclick =(event)=>{ 
-        event.preventDefault()
-         if(productsss[index]){
-            price-=Number(el.getAttribute('price'))
-             productsss[index].remove()
-         }
-        total.innerHTML=`$${price}`}
-         
-
-
-    }
-    
-)}
 

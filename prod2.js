@@ -32,6 +32,20 @@ function displayProducts(productsToDisplay) {
         console.log(card);
 
         productsContainer.appendChild(card);
+
+        
+        const addButton = card.querySelector(".add-to-card");
+
+        addButton.onclick = function () {
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            cart.push(product);
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("تمت إضافة المنتج إلى السلة ");
+        };
     });
 }
 

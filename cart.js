@@ -1,39 +1,47 @@
-let products=document.querySelectorAll(".add-to-card");
-let productrmv=document.querySelectorAll(".removefromcard");
-let list=document.querySelector(".cart-list");
-let total=document.querySelector(".total");
-let price=0;
-let title=null;
-let product=[]
-function addToCard(){
-    products.forEach((el,index) => {
-    
-    el.onclick =(event)=>{ 
-        event.preventDefault()
-         title=el.getAttribute('title')
-         price+=Number(el.getAttribute('price'))
-         product[index]=document.createElement('li')
-        product[index].innerText=title
-        list.appendChild(product[index])
-        
-        total.innerHTML=`$${price}`
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+let list = document.querySelector(".cart-list");
+let total = document.querySelector(".total");
 
-    }
-    
-})};function removefromcard(){ productrmv.forEach((el,index) => {
-    
-    el.onclick =(event)=>{ 
-        event.preventDefault()
-         if(product[index]){
-            price-=Number(el.getAttribute('price'))
-             product[index].remove()
-         }
-        total.innerHTML=`$${price}`}
-         
+function displayCart() {
 
+    list.innerHTML = "";
+    let totalPrice = 0;
 
-    }
-    
-)}
+    cart.forEach((product, index) => {
 
+        let li = document.createElement("li");
+
+        li.innerHTML = `
+            <span>${product.name} - $${product.price}</span>
+            <button class="removefromcard" data-index="${index}">
+                حذف
+            </button>
+        `;
+
+        list.appendChild(li);
+
+        totalPrice += product.price;
+    });
+
+    total.innerHTML = `$${totalPrice}`;
+
+    // أزرار الحذف
+    let removeButtons = document.querySelectorAll(".removefromcard");
+
+    removeButtons.forEach(button => {
+
+        button.onclick = function () {
+
+            let index = Number(this.getAttribute("data-index"));
+
+            cart.splice(index, 1);
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            displayCart();
+        };
+    });
+}
+
+displayCart();
