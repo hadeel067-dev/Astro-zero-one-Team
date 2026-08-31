@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const product =[{
     id: 1,
     name: "  سوار يدوي بتصاميم تراثية",
@@ -80,6 +80,7 @@ const productsContainer =
                 أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"></i>
             </button>
         `;
+        console.log(card);
 
         productsContainer.appendChild(card);
     });
