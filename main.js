@@ -9,8 +9,8 @@ product.name
 })
 
 const categoryButtons=document.querySelectorAll('.category-btn');
-categoryButtons.forEach(div =>{
-categoryButtons.addEventListener("click",()=>{
+ categoryButtons.forEach(div =>{
+ div.addEventListener("click",()=>{
      
     const category=div.dataset.category;
     const result=product.filter(product=> 
