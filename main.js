@@ -7,5 +7,19 @@
           () => { const category = button.dataset.category;
                 if (category === "الكل") { displayProducts(products); 
 
+<<<<<<< HEAD
                 } else { const results = products.filter(product => product.category === category ); 
                     displayProducts(results); } }); });
+=======
+const categoryButtons=document.querySelectorAll('.category-btn');
+ categoryButtons.forEach(div =>{
+ div.addEventListener("click",()=>{
+     
+    const category=div.dataset.category;
+    const result=product.filter(product=> 
+        product.category===category
+    );
+    displayProduct(result);
+});
+});
+>>>>>>> 5d483956929862e31dd9fd823679402ced942996
