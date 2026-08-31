@@ -40,7 +40,7 @@ const product =[{
 }
 ,
 {
- id:5,
+ id:5, 
     name: "ثوب فلسطيني ",
     price: 70,
     category: "ملابس",

@@ -7,6 +7,7 @@
     <title>اثر</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="cart.js" defer></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
             <p>سوار يدوي بتفاصيل تراثية</p>
             <p>$8</p>
 
-            <button class="add-to-card">
+            <button class="add-to-card" price="8" title="سوار يدوي بتفاصيل تراثية">
                 <i class="fa-solid fa-cart-shopping"></i>
                 أضف إلى السلة
             </button>
@@ -95,7 +96,7 @@
             <p>كوب خزفي بتصميم زيتون</p>
             <p>$10</p>
 
-            <button class="add-to-card">
+            <button class="add-to-card" price="10" title="كوب خزفي بتصميم زيتون">
                 <i class="fa-solid fa-cart-shopping"></i>
                 أضف إلى السلة
             </button>
@@ -105,7 +106,7 @@
             <p>حقيبة قماش مطرزة</p>
             <p>$18</p>
 
-            <button class="add-to-card">
+            <button class="add-to-card" price="18" title="حقيبة قماش مطرزة">
                 <i class="fa-solid fa-cart-shopping"></i>
                 أضف إلى السلة
             </button>
@@ -115,14 +116,19 @@
             <p>شمعة عطرية</p>
             <p>$12</p>
 
-            <button class="add-to-card">
+            <button class="add-to-card" price="12" title="شمعة عطرية">
                 <i class="fa-solid fa-cart-shopping"></i>
                 أضف إلى السلة
             </button>
         </div>
 
     </form>
-
+     <div> <h1>سلة المشتريات</h1>
+    <ul class="cart-list"></ul>
+    <input type="button" title="calculate" value="Calculate price" id="cal-btn">
+    <br>
+    <p class="total-title"> Total:&nbsp;</p><p class="total"></p>
+    </div>
 
     <!-- hadeel footer  -->
     <footer>
