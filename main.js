@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  const searchInput = document.querySelector("#search-box");
   searchInput.addEventListener("input",
  () => { const searchValue = searchInput.value.trim().toLowerCase(); 
@@ -6,6 +7,18 @@
       categoryButtons.forEach(button => { button.addEventListener("click", 
           () => { const category = button.dataset.category;
                 if (category === "الكل") { displayProducts(products); 
+=======
+
+const searchinput =document.querySelector('#search-box');
+searchinput.addEventListener("input",()=>{
+    const searchvalue=searchinput.textContent;
+     const result =product.filter(product =>
+product.name
+.includes(searchvalue)
+     );
+     displayProducts(result);
+})
+>>>>>>> 2d9b10c8d58ff8ba27e8ab774b799eb5e11c8e96
 
 <<<<<<< HEAD
                 } else { const results = products.filter(product => product.category === category ); 
@@ -19,7 +32,11 @@ const categoryButtons=document.querySelectorAll('.category-btn');
     const result=product.filter(product=> 
         product.category===category
     );
-    displayProduct(result);
+    displayProducts(result);
 });
 });
+<<<<<<< HEAD
 >>>>>>> 5d483956929862e31dd9fd823679402ced942996
+=======
+
+>>>>>>> 2d9b10c8d58ff8ba27e8ab774b799eb5e11c8e96
