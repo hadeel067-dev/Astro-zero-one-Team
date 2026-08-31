@@ -68,7 +68,8 @@ function displayProducts(productsToDisplay) {
        <p>${product.description}</p>
         <strong>$${product.price}</strong>
 
-         <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
+         <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button>;
+          <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;
             console.log(card);
             productsContainer.appendChild(card);
         });
@@ -76,6 +77,45 @@ function displayProducts(productsToDisplay) {
     displayProducts(products);
 
 }
+//malak
+let productss=document.querySelectorAll(".add-to-card");
+let productrmv=document.querySelectorAll(".removefromcard");
+let list=document.querySelector(".cart-list");
+let total=document.querySelector(".total");
+let price=0;
+let title=null;
+let productsss=[]
+function addToCard(){
+    products.forEach((el,index) => {
+    
+    el.onclick =(event)=>{ 
+        event.preventDefault()
+         title=el.getAttribute('title')
+         price+=Number(el.getAttribute('price'))
+         productsss[index]=document.createElement('li')
+        productsss[index].innerText=title
+        list.appendChild(productsss[index])
+        
+        total.innerHTML=`$${price}`
+
+
+    }
+    
+})};function removefromcard(){ productrmv.forEach((el,index) => {
+    
+    el.onclick =(event)=>{ 
+        event.preventDefault()
+         if(productsss[index]){
+            price-=Number(el.getAttribute('price'))
+             productsss[index].remove()
+         }
+        total.innerHTML=`$${price}`}
+         
+
+
+    }
+    
+)}
 
 //     <button class="add-to-card" onclick="addToCart(${product.id})"> أضف إلى السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button>;
 //     <button class="removefromcard" onclick="removefromcart(${product.id})"> احذف من السلة <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"> </i> </button> `;

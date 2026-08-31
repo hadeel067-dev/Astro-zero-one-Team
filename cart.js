@@ -25,8 +25,10 @@ function addToCard(){
     
     el.onclick =(event)=>{ 
         event.preventDefault()
-         if(product[index]){price-=Number(el.getAttribute('price'))
-        product[index].remove()}
+         if(product[index]){
+            price-=Number(el.getAttribute('price'))
+             product[index].remove()
+         }
         total.innerHTML=`$${price}`}
          
 
